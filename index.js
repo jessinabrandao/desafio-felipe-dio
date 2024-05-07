@@ -1,27 +1,38 @@
-let nome = "Jéssina"
-let xp = 24
-const mensagem = "você está na liga"
+let nome = "Paulo"
+let xp = "10001"
+let nivel = ""
 
-if (xp <= 1000){
-    console.log( nome + " " + mensagem + " "+ "Ferro")
+switch (true){
+    case xp <= 1000:
+        nivel = "Ferro"
+        break
+    
+    case xp >=1001 && xp <=2000:
+        nivel = "Bronze"
+        break
+    
+    case xp >=2001 && xp <=5000:
+        nivel = "Prata"
+        break
+
+    case xp >=5001 && xp <=7000:
+        nivel + "Outro"
+        break
+    
+    case xp >=7001 && xp <=8000:
+        nivel = "Platina"
+        break
+
+    case xp >=8001 && xp <=9000:
+        nivel = "Ascendente"
+        break
+    
+    case xp >= 9001 && xp<=10000:
+        nivel = "Imortal"
+        break
+
+    default:
+        nivel = "Radiante"
 }
 
-else if (xp >= 1001 && xp <= 2000){
-    console.log(nome + " " + mensagem+ " " + "Bronze")
-}
-
-else if (xp >= 2001 && xp <= 5000){
-    console.log(nome +" "+ mensagem+ " " + "Prata Ouro")
-}
-else if (xp >= 5001 && xp <=8000){
-    console.log(nome + " " + mensagem + " " + "Platina Diamante")
-}
-else if (xp >= 9001 && xp <= 9000){
-    console.log(nome + " " + mensagem + " " + "Ascendente")
-}
-else if (xp >= 9001 && xp <= 10000){
-    console.log(nome + " " + mensagem + " " + "Imortal")
-}
-else if (xp >= 10001){
-    console.log(nome + " " + mensagem + " " + "Radiante")
-}
+console.log("O Herói de nome " + nome + " está no nível de " + nivel)
